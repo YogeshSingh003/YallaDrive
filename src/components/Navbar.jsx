@@ -9,6 +9,14 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false); // Close the navbar on click
+  };
+
   return (
     <div>
       <div className="flex  my-5 flex-row justify-between items-center">
@@ -33,9 +41,11 @@ const Navbar = () => {
                 isOpen ? "flex-col md:flex-row  md:gap-20" : " hidden md:flex "
               } `}
           >
-            <button>About</button>
-            <button>Services</button>
-            <button>FAQ's</button>
+            <button onClick={() => scrollToSection("about")}>About</button>
+            <button onClick={() => scrollToSection("services")}>
+              Services
+            </button>
+            <button onClick={() => scrollToSection("faqs")}>FAQ's</button>
           </div>
           <div
             className={`bg-blue-600 opacity-90 text-white font-normal items-center gap-2 py-2 px-4 rounded flex  ${

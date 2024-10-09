@@ -2,7 +2,7 @@ import ServiceCards from "./ServiceCards";
 
 const Services = () => {
   return (
-    <div className="">
+    <div id="services">
       <div className="flex flex-col md:flex-row">
         <div className="md:w-[50%]">
           <div className="flex items-center">

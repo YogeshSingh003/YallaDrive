@@ -25,7 +25,10 @@ const FAQ = () => {
   };
 
   return (
-    <div className="bg-black text-white py-5 -mx-1 px-1 lg:px-24 md:-mx-4 lg-px-4 lg:-mx-20 ">
+    <div
+      className="bg-black text-white py-5 -mx-1 px-1 lg:px-24 md:-mx-4 lg-px-4 lg:-mx-20"
+      id="faqs"
+    >
       <div className="flex  flex-col md:flex-row my-20 gap-5">
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold md:w-[60%]">
           Frequently Asked Questions

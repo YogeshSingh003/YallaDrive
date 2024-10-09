@@ -8,7 +8,7 @@ const ContactForm = () => {
     name: "Alexander",
     companyName: "Facebook",
     email: "Smith@gmail.com",
-    phoneNo: "",
+    phoneNo: "+91 ",
     message: "",
   });
 
@@ -36,7 +36,7 @@ const ContactForm = () => {
         </h2>
         <div className="border border-gray-700 p-5 rounded ">
           <div className="mb-4  ">
-            <label>Name</label>
+            <label className="">Name</label>
             <input
               type="text"
               id="name"
@@ -44,7 +44,7 @@ const ContactForm = () => {
               placeholder="Name*"
               value={formData.name}
               onChange={handleChange}
-              className="w-full     placeholder-[#111010]  placeholder-opacity-60  bg-black border-b  border-gray-700  focus:outline-none focus:border-b-2 focus:border-gray-500"
+              className="w-full   pt-2  placeholder-[#111010]  placeholder-opacity-60  bg-black border-b  border-gray-700  focus:outline-none focus:border-b-2 focus:border-gray-500"
               required
             />
           </div>
@@ -58,7 +58,7 @@ const ContactForm = () => {
               placeholder="Email*"
               value={formData.email}
               onChange={handleChange}
-              className="w-full      md:py-1 placeholder-[#111010]  placeholder-opacity-60 bg-black border-b  border-gray-700 focus:outline-none focus:border-b-2 focus:border-gray-500"
+              className="w-full   pt-2    placeholder-[#111010]  placeholder-opacity-60 bg-black border-b  border-gray-700 focus:outline-none focus:border-b-2 focus:border-gray-500"
               required
             />
           </div>
@@ -72,7 +72,7 @@ const ContactForm = () => {
                 placeholder="Company name"
                 value={formData.companyName}
                 onChange={handleChange}
-                className="w-full      md:py-1 placeholder-[#111010]  placeholder-opacity-60 bg-black border-b  border-gray-700 focus:outline-none focus:border-b-2 focus:border-gray-500"
+                className="w-full    pt-2   placeholder-[#111010]  placeholder-opacity-60 bg-black border-b  border-gray-700 focus:outline-none focus:border-b-2 focus:border-gray-500"
               />
             </div>
 
@@ -85,7 +85,7 @@ const ContactForm = () => {
                 placeholder="Phone no*"
                 value={formData.phoneNo}
                 onChange={handleChange}
-                className="w-full     md:py-1 placeholder-[#111010]  placeholder-opacity-60 bg-black border-b  border-gray-700 focus:outline-none focus:border-b-2 focus:border-gray-500"
+                className="w-full     pt-2 placeholder-[#111010]  placeholder-opacity-60 bg-black border-b  border-gray-700 focus:outline-none focus:border-b-2 focus:border-gray-500"
                 required
               />
             </div>

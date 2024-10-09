@@ -2,7 +2,7 @@ import Baby from "../assets/images/Baby.png";
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       <div className="flex flex-col-reverse lg:flex-row lg:h-screen md:mx-5 my-20">
         <div className="bg-blue-100 bg-opacity-30 lg:w-[50%] py-12 md:p-12 flex flex-col justify-between gap-10 lg:gap-0 text-xl">
           <div className="flex items-center">
